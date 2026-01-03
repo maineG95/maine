@@ -1,0 +1,53 @@
+@import "variable";
+
+.container {
+  padding: 0px 100px;
+  min-height: 100vh;
+  color:$charcoal;
+}
+
+.title {
+  text-align: start;
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.cards{
+  margin: 40px 0px;
+}
+
+.content {
+  font-size: 18px;
+  text-align: start;
+  color:$charcoal;
+}
+
+.section-heading {
+  font-size:20px;
+  font-weight: bold;
+  text-align: start;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.sub-heading {
+  font-size:15px;
+  text-align: start;
+  font-weight: normal;
+  font-style: italic; 
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.section-heading i {
+  font-size: 24px;
+  color:$coral;
+  padding-right:10px;
+}

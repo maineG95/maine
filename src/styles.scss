@@ -1,1 +1,166 @@
-/* You can add global styles to this file, and also import other style files */
+@import "theme/variable";
+@import "theme/theme";
+@import "theme/colors";
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color:$warmGray;
+}
+
+
+
+
+// /// horizontal spacer
+// .space-h-xl {
+//   height: $hSpacerXl;
+// }
+
+// .space-h-lg {
+//   height: $hSpacerLg;
+// }
+
+// .space-h-med {
+//   height: $hSpacerMed;
+// }
+
+// .space-h-sm {
+//   height: $hSpacerSm;
+// }
+
+// .space-h-xs {
+//   height: $hSpacerSm;
+// }
+
+// /// vertical spacer
+// .space-v-xl {
+//   height: $hSpacerXl;
+// }
+
+// .space-v-lg {
+//   height: $hSpacerLg;
+// }
+
+// .space-v-med {
+//   height: $hSpacerMed;
+// }
+
+// .space-v-sm {
+//   height: $hSpacerSm;
+// }
+
+// .space-v-xs {
+//   height: $hSpacerSm;
+// }
+
+// body {
+//   background-color: $fadedGray;
+// }
+
+// .hr-1 {
+//   border-bottom: $borderFadedGray2;
+// }
+
+// // radius
+// .raduis-med {
+//   border: $cardRadius;
+// }
+
+// // buttons
+// button,
+// a[role="btn"] {
+//   padding: 0.75rem 1.6rem;
+//   font-size: 1rem;
+//   text-decoration: none !important;
+//   color: inherit;
+// }
+
+// button:hover,
+// a[role="btn"]:hover {
+//   opacity: 0.8;
+//   color: inherit;
+// }
+
+// .best-btn-1 {
+//   background-color: $purple;
+//   color: $white !important;
+// }
+
+
+// .best-btn-2 {
+//   background-color: $orange;
+//   color: $white !important;
+// }
+
+
+// // min height vh
+
+// .min-h-vh-100 {
+//   min-height: 100vh;
+// }
+
+// .min-h-vh-90 {
+//   min-height: 90vh;
+// }
+
+// .min-h-vh-80 {
+//   min-height: 80vh;
+// }
+
+// .min-h-vh-70 {
+//   min-height: 70vh;
+// }
+
+
+
+// // borders none
+// .b-l-none {
+//   border-left: none !important;
+// }
+
+// .b-r-none {
+//   border-right: none !important;
+// }
+
+// .b-b-none {
+//   border-bottom: none !important;
+// }
+
+// .b-t-none {
+//   border-top: none !important;
+// }
+
+// .my-text-bold-1 {
+//   color: $purple;
+//   font-weight: 700 !important;
+//   font-family: $fontThemeBold !important;
+//   text-transform: capitalize;
+// }
+
+
+// .my-btn-color-2 {
+//   background-color: $orange !important;
+//   color: $white !important;
+//   font-weight: 700;
+//   font-family: $fontThemeBold;
+//   border-radius: $raduisMed;
+// }
+
+
+// /// width
+// .w-150 {
+//   width: 150px;
+// }
+
+// .w-200 {
+//   width: 300px;
+// }
+
+// .w-300 {
+//   width: 300px;
+// }
+
+// .w-400 {
+//   width: 400px;
+// }

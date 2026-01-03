@@ -1,0 +1,56 @@
+<header>
+  <div class="logo-container">
+    <p class="logo-name">SD</p>
+    <p class="sub-name">Portfolio</p>
+  </div>
+  <div class="nav-items">
+    <nav class="desktop-nav">
+        <ul>
+          <li><a routerLink="/" routerLinkActive="active-link">Home</a></li>
+          <li><a routerLink="/me" routerLinkActive="active-link">About Me</a></li>
+          <li><a routerLink="/skills" routerLinkActive="active-link">Skills</a></li>
+          <li class="dropdown">
+            <a class="drop">Work Experience  <span class="arrow-down" (click)="toggleDropdown($event)"></span></a>
+            <ul class="dropdown-menu" [class.show]="dropdownOpen">
+              <li><a routerLink="/skytech" routerLinkActive="active-link"(click)="closeMobileNav()">SKYTECH</a></li>
+              <li><a routerLink="/best" routerLinkActive="active-link"(click)="closeMobileNav()">BEST</a></li>
+              <li><a routerLink="/artc" routerLinkActive="active-link"(click)="closeMobileNav()">ARTC</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <nav class="desktop-nav end">
+        <ul>
+          <li><a routerLink="/contacts" routerLinkActive="active-link">Contact Me</a></li>
+          <li><a routerLink="/join" routerLinkActive="active-link">Sign Up</a></li>
+        </ul>
+      </nav>
+  </div>
+
+  <!-- Hamburger Menu for Mobile -->
+  <div class="hamburger-menu" (click)="toggleMobileNav()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Mobile Navigation (Initially Hidden) -->
+ <div class="mobile-nav" [class.show]="isMobileNavOpen">
+    <div class="close-btn" (click)="closeMobileNav()">X</div>  <!-- Close button -->
+    <ul>
+      <li><a routerLink="/" (click)="closeMobileNav()">Home</a></li>
+      <li><a routerLink="/me" (click)="closeMobileNav()">About Me</a></li>
+      <li><a routerLink="/skills" (click)="closeMobileNav()">Skills</a></li>
+      <li class="dropdown" (click)="toggleMobileDropdown($event)">
+        <a href="#">Work Experience<span class="arrow-down" ></span></a>
+        <ul class="dropdown-menu" [class.show]="mobileDropdownOpen">
+          <li><a routerLink="/skytech" (click)="closeMobileNav()">Skytech</a></li>
+          <li><a routerLink="/best" (click)="closeMobileNav()">Best</a></li>
+          <li><a routerLink="/artc" (click)="closeMobileNav()">ARTC</a></li>
+        </ul>
+      </li>
+      <li><a routerLink="/contacts" (click)="closeMobileNav()">Contact Me</a></li>
+      <li><a routerLink="/join" (click)="closeMobileNav()">Sign Up</a></li>
+    </ul>
+  </div>
+</header>

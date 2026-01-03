@@ -1,0 +1,53 @@
+@import "variable";
+
+.container {
+  padding: 0px 100px;
+  color:$charcoal;
+}
+
+.title {
+  text-align: start;
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 10px;
+
+}
+
+.section-title {
+  margin-bottom: 20px;
+}
+
+.cards{
+  margin: 40px 0px;
+}
+
+.content {
+  font-size: 18px;
+  text-align: center;
+  color:$charcoal;
+}
+
+.section-heading {
+  font-size:20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.training-title {
+  font-size:large;
+  font-weight: bold;
+  text-align: start;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+.section-heading i {
+  font-size: 24px; /* Icon size */
+  color:$coral; /* Color for icons */
+  padding: 0px 10px;
+}

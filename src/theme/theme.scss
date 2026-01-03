@@ -1,0 +1,156 @@
+@import "variable";
+
+.purple-btn {
+  background-color: $turquoise;
+  color: $white;
+}
+
+/// text decoration
+
+// font style
+
+.theme-text {
+  font-family: $fontTheme;
+  font-weight: 500;
+}
+
+.theme-text-600 {
+  font-family: $fontTheme;
+  font-weight: 600;
+}
+.theme-text-700 {
+  font-family: $fontTheme;
+  font-weight: 700;
+}
+.theme-text-bold {
+  font-family: $fontThemeBold;
+  font-weight: 700;
+}
+
+/// font sizes
+
+.f-xl {
+  font-size: $fontXl;
+}
+.f-lg {
+  font-size: $fontLg;
+}
+.f-med {
+  font-size: $fontMed;
+}
+.f-sm {
+  font-size: $fontSm;
+}
+.f-xs {
+  font-size: $fontXs;
+}
+
+/// btn design
+
+.orange-btn {
+  background-color: $turquoise;
+  color: white;
+  font-weight: 700;
+  font-family: $fontThemeBold;
+  border-radius: $btnRadius;
+}
+.black-outline-btn {
+  background-color: transparent;
+  color: $black;
+  font-weight: 700;
+  font-family: $fontThemeBold;
+  border-radius: $btnRadius;
+  border: $black solid 1.5px;
+}
+.purple-btn {
+  background-color: $turquoise;
+  color: white;
+  font-weight: 700;
+  font-family: $fontThemeBold;
+}
+
+// shadow
+.best-card-shadow {
+  box-shadow: 5px 5px 10px 1px rgba(107, 107, 107, 0.4);
+  -webkit-box-shadow: 5px 5px 10px 1px rgba(107, 107, 107, 0.4);
+  -moz-box-shadow: 5px 5px 10px 1px rgba(107, 107, 107, 0.4);
+}
+
+/// card design
+
+
+.best-card-2 {
+  border: $borderFadedGray2;
+  border-radius: $cardRadius;
+  background-color: white;
+  padding: $pdMed;
+}
+
+/// border design
+
+.purple-border {
+  border: 3px solid $purple;
+  border-radius: $cardRadius;
+}
+
+// input designs and labels
+.form-label {
+  color: $white;
+  font-weight: 600;
+  font-family: $fontTheme;
+}
+.input-design {
+  border: 2px solid $turquoise;
+  border-radius: 8px;
+  background-color: $purpleFaded2;
+  font-family: $fontTheme;
+}
+.input-design:focus {
+  background-color: $purpleFaded2;
+}
+
+.input-design-2 {
+  border: 2.5px solid $purpleFaded;
+  background-color: $white;
+  border-radius: 8px;
+  width: 100%;
+  font-family: $fontTheme;
+}
+.input-design-2:focus {
+  background-color: $white;
+}
+.input-design-3 {
+  border: 2px solid $turquoise;
+  background-color: $purpleFaded2;
+  border-radius: 8px;
+  width: 100%;
+  font-family: $fontTheme;
+}
+.input-design-3:focus {
+  background-color: $input3BgColor;
+}
+
+/// btn sizes
+.btn-med {
+  width: $widthMed;
+}
+.my-btn-sm {
+  width: $widthSm;
+}
+
+
+
+//Cards
+.best-card {
+  background-color: $surface;
+  padding: $pdMed;
+  border-radius: $cardRadius;
+  border: 1px solid $lightCoral;
+  .content {
+    color: $charcoal;
+    font-family: $fontTheme;
+    font-size: $fontMed;
+    margin: 0;
+  }
+}
+

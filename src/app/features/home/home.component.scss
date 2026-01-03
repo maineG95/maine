@@ -1,0 +1,256 @@
+@import "variable";
+
+
+.hero-section {
+  min-height: 100vh;
+  // background: url('/b3.png') center/cover no-repeat;
+  background: $warmGray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.hero-container {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  padding: 40px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* Align content vertically */
+  align-items: flex-end;    /* Align text and button to the right */
+}
+
+.name {
+  color:$charcoal;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 0;
+}
+
+.profession {
+  font-size: 24px;
+  font-weight: 400;
+  color:$charcoal;
+  line-height: 0;
+}
+
+.sub {
+  font-size: 14px;
+  font-weight: 600;
+  color:$charcoal;
+  line-height: 0;
+  font-style: italic; 
+}
+
+.desc {
+  font-size: 14px;
+  color:$charcoal;
+  line-height: 0;
+  font-style: italic; 
+}
+
+.btn-hire {
+  padding: 12px 26px;
+  border: none;
+  border-radius: 4px;
+  background: $coral;
+  color: $textPrimary;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-top: 20px;
+  align-self: flex-end; /* This ensures the button stays to the right */
+}
+
+.btn-hire:hover {
+  background:$softPink;
+  transform: scale(1.05); 
+}
+
+.hero-image {
+  // width: 40%;
+  display: flex;
+  justify-content: center;
+}
+.hero-image img {
+  // margin-top: -80px;
+  background-color: $softPink;
+  width: 420px;
+  height: 420px;
+  object-fit:cover;
+  border-radius: 50%;
+  border: 6px solid $lightCoral;
+  box-shadow: 0px 18px 40px rgba(0, 0, 0, 0.25);
+  animation: glowBorder 3s infinite ease-in-out;
+   transition: transform 0.3s ease-in-out;
+   
+}
+
+.hero-image img:hover {
+  transform: scale(1.1); /* Slight zoom-in effect */
+}
+
+/* ========= Tablet ========= */
+@media (max-width: 991px) {
+.hero-section {
+  padding: 40px;
+}
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 0px;
+    gap: 0px;
+  }
+
+  .hero-text {
+    width: 100%;
+  }
+
+  .hello {
+    margin-bottom: 0px;
+  }
+
+  .name {
+    margin-bottom: 0px;
+  }
+
+  .sub {
+    margin-bottom: 0px;
+  }
+
+  .desc {
+    margin-bottom: 0px;
+  }
+
+  .hero-image {
+    width: 100%;
+    order: -1; /* Moves image above text */
+    margin-bottom: 10px;
+  }
+  
+  .name {
+    font-size: 38px;
+  }
+
+  .hero-image img {
+   width: 340px;
+    height: 340px;
+  }
+
+  
+}
+
+
+/* ========= Mobile ========= */
+@media (max-width: 550px) {
+  .hero-section {
+    padding: 0;
+  }
+
+  .hero-container {
+    padding: 0px;
+  }
+
+  .hello {
+    font-size: 20px;
+    margin-bottom: 0;
+    }
+
+  .name {
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+
+  .sub {
+    font-size: 15px;
+    margin-bottom: 0;
+  }
+
+  .desc {
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
+
+  .hero-image img {
+    margin-top: -80px;
+    width: 200px;
+    height: 200px;
+  }
+  .btn-hire {
+    padding: 10px 20px;
+    font-size: 12px;
+    }
+}
+
+@keyframes glowBorder {
+  0% {
+    border-color: $softPink; /* turquoise */
+    box-shadow: 0 0 10px $softPink, 0 0 20px $softPink;
+  }
+  33% {
+    border-color: $blushPeach; /* yellow */
+    box-shadow: 0 0 10px $blushPeach, 0 0 20px $blushPeach;
+  }
+  66% {
+    border-color: $lightCoral; /* pink */
+    box-shadow: 0 0 10px $lightCoral, 0 0 20px  $lightCoral;
+  }
+  100% {
+    border-color: $softPink; /* back to turquoise */
+    box-shadow: 0 0 10px $softPink, 0 0 20px $softPink;
+  }
+}
+//bubbles
+.bubbles{
+  position:absolute;
+  width:100%;
+  height: 100%;
+  z-index:0;
+  overflow:hidden;
+  top:0;
+  left:0;
+  pointer-events: none; 
+}
+.bubble{
+  position: absolute;
+  // bottom:100px;
+  width:20px;
+  height: 20px;
+  background:$softPink;
+  border-radius:50%;
+  opacity:5%;
+  animation: rise 20s infinite ease-in;
+}
+ 
+.bubble:nth-child(1){
+  width:25px;
+  height:25px;
+  background-color:$green;
+  width:15px;
+  height:15px;
+  animation-duration:22s;
+  animation-delay:0s;
+}
+
+@keyframes rise{
+  0%{
+    bottom:-100px;
+    transform:translateX(0);
+  }
+  50%{
+    transform:translate(100px);
+  }
+  100%{
+    bottom:1080px;
+    transform:translateX(-200px);
+  }
+}

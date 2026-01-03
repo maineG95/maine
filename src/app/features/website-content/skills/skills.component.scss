@@ -1,0 +1,78 @@
+@import "variable";
+
+.container {
+  padding: 0px 100px;
+  min-height: 100vh;
+  color:$charcoal;
+}
+
+.title {
+  text-align: start;
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.style {
+  list-style: none;
+}
+
+.cards {
+  margin: 40px 0px;
+}
+
+.skill-card {
+  border-radius: 0px;
+}
+
+.display {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-heading {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: start;
+}
+
+.content {
+  font-size: 18px;
+  text-align: start;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-right: 5px;
+  background-color:$offSoftPink; 
+  padding: 5px 20px;
+  border-radius:4px;
+}
+
+.toggle-btn {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+  transform: rotate(-90deg);
+  stroke:$coral;
+}
+
+.arrow.rotated {
+  transform: rotate(0deg);
+}
+
+/* New styles for horizontal list */
+.horizontal-list {
+  display: flex;
+  flex-wrap: wrap; /* Ensures items wrap if needed */
+  gap: 10px; /* Space between items */
+}
+.section-heading i {
+  font-size: 24px; /* Icon size */
+  color:$coral; /* Color for icons */
+  padding-right: 10px;
+}

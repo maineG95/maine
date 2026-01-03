@@ -28,13 +28,23 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "src/favicon.ico"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/assets"
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+               "node_modules/font-awesome/css/font-awesome.min.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/theme"
+              ]
+            }
           },
           "configurations": {
             "production": {
@@ -46,8 +56,8 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kB",
-                  "maximumError": "4kB"
+                  "maximumWarning": "5kB",
+                  "maximumError": "10kB"
                 }
               ],
               "outputHashing": "all"
@@ -87,13 +97,23 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input":  "src/favicon.ico"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/assets"
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+               "node_modules/font-awesome/css/font-awesome.min.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/theme"
+              ]
+            }
           }
         }
       }

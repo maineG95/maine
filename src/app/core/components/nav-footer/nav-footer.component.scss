@@ -1,0 +1,60 @@
+@import "variable";
+
+.footer{
+    background-color:$lightCoral;
+    color:$charcoal;
+    padding: 50px 100px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.details{
+    display: flex;
+    justify-content: space-between;
+}
+
+.view .resume {
+  cursor: pointer;
+  transition: color 0.3s, transform 0.3s ease-in-out;
+}
+
+.view .resume:hover {
+  color: $coral;
+  transform: scale(1.05);
+}
+
+.view .resume:active {
+  transform: scale(0.98);
+}
+
+.socials{
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.footer-icon {
+  font-size: 24px; /* Adjust size of icons */
+  color: #333; /* Set color */
+  margin: 0 10px; /* Space between icons */
+  transition: color 0.3s;
+}
+
+.footer-icon:hover {
+  color:$coral; /* Hover effect color */
+  transform: scale(1.05);
+}
+
+
+.address .email {
+  cursor: pointer;
+  transition: color 0.3s, transform 0.3s ease-in-out;
+}
+
+.address .email:hover {
+  color: $coral;
+  transform: scale(1.05);
+}
+
+.address .email:active {
+  transform: scale(0.98);
+} 
