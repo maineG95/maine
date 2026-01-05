@@ -1,0 +1,24 @@
+@import "colors.scss";
+
+.forgot-password {
+    color:$turquoise;
+    font-family: $fontTheme;
+    font-size: 1rem;
+    font-style: italic;
+}
+.label{
+    color:$turquoise;
+    font-family: $fontTheme;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.subLabel{
+    font-family: $fontTheme;
+    font-size: 1rem;
+}
+.link{
+    color:$white;
+    font-family: $fontTheme;
+    font-size: 1rem;
+    font-weight: 600;
+}

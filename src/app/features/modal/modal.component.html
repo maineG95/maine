@@ -1,0 +1,9 @@
+<div class="modal-overlay">
+  <div class="modal-content">
+    <button (click)="close()">Close</button>
+
+    <!-- Conditionally render Login or SignUp based on currentView -->
+    <app-login *ngIf="currentView === 'login'" (switchToSignUpEvent)="openSignUp()"></app-login>
+    <app-sign-up *ngIf="currentView === 'signup'" (switchToLoginEvent)="openLogin()"></app-sign-up>
+  </div>
+</div>

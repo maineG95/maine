@@ -18,24 +18,28 @@ export class SweetAlert2Service {
       title: message,
     });
   }
+
   toastError(message: string): void {
     this.ToastOption.fire({
       icon: 'error',
       title: message,
     });
   }
+
   toastWarning(message: string): void {
     this.ToastOption.fire({
       icon: 'warning',
       title: message,
     });
   }
+
   toastInfo(message: string): void {
     this.ToastOption.fire({
       icon: 'info',
       title: message,
     });
   }
+
   toastQuestion(message: string): void {
     this.ToastOption.fire({
       icon: 'question',
@@ -44,18 +48,20 @@ export class SweetAlert2Service {
   }
 
   toggleLoading(): void {
-    let timerInterval;
+    let timerInterval: ReturnType<typeof setInterval>;
     Swal.fire({
       timerProgressBar: true,
       allowOutsideClick: false,
       didOpen: () => {
         Swal.showLoading();
+        // Set the timer interval for tracking the progress
+        timerInterval = setInterval(() => {}, 100); // Empty interval just to track the timer
       },
       willClose: () => {
+        // Clear the interval when the modal closes
         clearInterval(timerInterval);
       },
     }).then((result) => {
-      /* Read more about handling dismissals below */
       if (result.dismiss === Swal.DismissReason.timer) {
         console.log('I was closed by the timer');
       }
@@ -63,18 +69,20 @@ export class SweetAlert2Service {
   }
 
   showLoading(): void {
-    let timerInterval;
+    let timerInterval: ReturnType<typeof setInterval>;
     Swal.fire({
       timerProgressBar: true,
       allowOutsideClick: false,
       didOpen: () => {
         Swal.showLoading();
+        // Set the timer interval for tracking the progress
+        timerInterval = setInterval(() => {}, 100); // Empty interval just to track the timer
       },
       willClose: () => {
+        // Clear the interval when the modal closes
         clearInterval(timerInterval);
       },
     }).then((result) => {
-      /* Read more about handling dismissals below */
       if (result.dismiss === Swal.DismissReason.timer) {
         console.log('I was closed by the timer');
       }
