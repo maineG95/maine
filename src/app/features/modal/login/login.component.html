@@ -1,22 +1,22 @@
 <form [formGroup]="loginForm" (ngSubmit)="submitLoginForm()">
-  <div class="col-md-10 col-lg-9 col-12 mx-auto">
-    <div class="mb-3">
-      <p class="label text-center turquoise-text">Login</p>
+  <div class="container">
+    <div class="">
+      <p class="title">Login</p>
     </div>
-    <div class="subLabel text-center mb-4">
+    <div class="know-more">
       Know more about me?
-      <button type="button" (click)="switchToSignUp()">Sign Up</button>  <!-- Button to switch to SignUp -->
+      <span type="button" class="sign-up" (click)="switchToSignUp()">Sign Up</span>  <!-- Button to switch to SignUp -->
     </div>
-    <div class="mb-3">
-      <label for="mobileNumber" class="form-label">Phone Number</label>
-      <input formControlName="mobileNumber" id="mobileNumber" />
+    <div class="creds">
+      <label for="mobileNumber" class="label">Phone Number</label>
+      <input  class="input" formControlName="mobileNumber" id="mobileNumber" />
     </div>
-    <div class="mb-4">
-      <label for="password" class="form-label">Password</label>
-      <input type="password" formControlName="password" id="password" />
+    <div class="creds">
+      <label for="password" class="label">Password</label>
+      <input class="input" type="password" formControlName="password" id="password" />
     </div>
-    <div class="col-12">
-      <button class="btn orange-btn" type="submit">LOG IN</button>
+    <div class="button">
+      <button class="btn" type="submit">Login</button>
     </div>
   </div>
 </form>

@@ -4,6 +4,7 @@ import { ReactiveFormsModule } from '@angular/forms';  // Import ReactiveFormsMo
 import { LocalStorageService } from '../../../core/components/services/local-storage-service';
 import { SweetAlert2Service } from '../../../core/components/services/sweet_alert2';
 import { CommonModule } from '@angular/common'; 
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -22,7 +23,9 @@ export class LoginComponent {
   constructor(
     private formBuilder: FormBuilder,
     private storage: LocalStorageService,
-    private swal: SweetAlert2Service
+    private swal: SweetAlert2Service,
+    private router: Router 
+
   ) {
     this.loginForm = this.formBuilder.group({
       mobileNumber: ['', Validators.required],
@@ -60,9 +63,8 @@ export class LoginComponent {
       this.swal.toastInfo('Log in Success!');
 
       setTimeout(() => {
-        // this.router.navigate([`${myRouter.home.path}`]).then(() => {
-        //   window.location.reload();
-        // });
+        this.router.navigate(['/']); 
+        window.location.reload();  // You can also navigate to login route here
       }, 1000);
     } else {
       this.swal.toastInfo('Invalid Credentials!');

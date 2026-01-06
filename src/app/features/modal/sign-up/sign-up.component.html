@@ -1,1 +1,79 @@
-<p>sign-up works!</p>
+<form [formGroup]="registerForm" (ngSubmit)="submitRegisterForm()">
+  <div class="container">
+    <div class="">
+      <p class="title">Create an Account</p>
+    </div>
+    <div class="know-more">
+      Already have an Account?
+      <span type="button" class="sign-up" (click)="goBackToLogin()">Login</span>
+    </div>
+    <div class="details">
+        <div class="creds">
+            <label for="firstName" class="label">First Name</label>
+            <input 
+                type="text"
+                formControlName="firstName"
+                class="input"
+                id="firstName"
+            />
+        </div>
+        <div class="creds">
+            <label for="lastName" class="label">Last Name</label>
+            <input 
+                type="text"
+                formControlName="lastName"
+                class="input"
+                id="lastName"
+            />
+        </div>
+    </div>
+    <div class="details">
+        <div class="creds">
+            <label for="mobileNumber" class="label">Phone Number</label>
+            <input 
+                type="text"
+                formControlName="mobileNumber"
+                class="input"
+                id="mobileNumber"
+            />
+        </div>
+        <div class="creds">
+            <label for="email" class="label">Email</label>
+            <input 
+                type="email"
+                formControlName="email"
+                class="input"
+                id="email"
+            />
+        </div>
+    </div>
+    <div class="details">
+        <div class="creds">
+            <label for="password" class="label">Password</label>
+            <input 
+                type="password"
+                formControlName="password"
+                class="input"
+                id="password"
+            />
+        </div>
+        <div class="creds">
+            <label for="confirmPassword" class="label"> Confirm Password</label>
+            <input 
+                type="password"
+                formControlName="confirmPassword"
+                class="input"
+                id="confirmPassword"
+            />
+        </div>
+
+    </div>
+
+    
+    
+
+    <div class="button">
+      <button class="btn" type="submit">Register</button>
+    </div>
+  </div>
+</form>

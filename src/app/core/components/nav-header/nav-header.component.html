@@ -22,7 +22,8 @@
       <nav class="desktop-nav end">
         <ul>
           <li><a routerLink="/contacts" routerLinkActive="active-link">Contact Me</a></li>
-             <li><a (click)="openModal()">openmodal</a></li>
+          <li *ngIf="!isLoggedIn"><a (click)="openModal()">Login</a></li>
+          <li *ngIf="isLoggedIn" ><a (click)="openLogout()">Logout</a></li>
         </ul>
       </nav>
   </div>
@@ -50,21 +51,13 @@
         </ul>
       </li>
       <li><a routerLink="/contacts" (click)="closeMobileNav()">Contact Me</a></li>
-      <li><a (click)="openModal()">openmodal</a></li>
-
+      <li *ngIf="!isLoggedIn"><a (click)="openModal()">Login</a></li>
+      <li *ngIf="isLoggedIn" ><a (click)="openLogout()">Logout</a></li>
     </ul>
   </div>
 </header>
 
-
-<!-- <app-modal *ngIf="isModalVisible" (closeModalEvent)="closeModalFromChild()"> 
-  <button (click)="openModal()">Open Modal</button>
-  <button (click)="openLogin()">Login</button>
-  <button (click)="openSignUp()">Sign Up</button>
-</app-modal> -->
-
-<!-- In NavHeaderComponent, Modal -->
 <app-modal *ngIf="isModalVisible" (closeModalEvent)="closeModalFromChild()" (switchToSignUpEvent)="openSignUp()">
-  <!-- The modal content is controlled by the parent component -->
 </app-modal>
 
+<app-logout *ngIf="isLogoutModalVisible" (closeModalEvent)="closeLogoutModal()"></app-logout>
