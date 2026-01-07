@@ -1,22 +1,43 @@
 <form [formGroup]="loginForm" (ngSubmit)="submitLoginForm()">
   <div class="container">
     <div class="">
-      <p class="title">Login</p>
+      <p class="modal-title">Login</p>
     </div>
-    <div class="know-more">
-      Know more about me?
-      <span type="button" class="sign-up" (click)="switchToSignUp()">Sign Up</span>  <!-- Button to switch to SignUp -->
+    <div class="modal-sub-title">
+      Want to know more about me?
+      <span type="button" class="sign-up" (click)="switchToSignUp()">Sign Up</span> 
     </div>
     <div class="creds">
       <label for="mobileNumber" class="label">Phone Number</label>
-      <input  class="input" formControlName="mobileNumber" id="mobileNumber" />
+      <div class="section">
+        <input  
+          class="input" 
+          formControlName="mobileNumber" 
+          id="mobileNumber" 
+          [ngClass]="{'is-invalid': (loginFormCtrl('mobileNumber')?.invalid && (loginFormCtrl('mobileNumber')?.touched || submitted))}"
+          />
+        <div class="invalid-feedback" *ngIf="loginFormCtrl('mobileNumber')?.hasError('required') && (loginFormCtrl('mobileNumber')?.touched || submitted)">
+          This field is required!
+        </div>
+      </div>
     </div>
     <div class="creds">
       <label for="password" class="label">Password</label>
-      <input class="input" type="password" formControlName="password" id="password" />
+      <div class="section">
+        <input 
+          class="input" 
+          type="password" 
+          formControlName="password" 
+          id="password" 
+          [ngClass]="{'is-invalid': (loginFormCtrl('password')?.invalid && (loginFormCtrl('password')?.touched || submitted))}"
+          />
+        <div class="invalid-feedback" *ngIf="loginFormCtrl('password')?.hasError('required') && (loginFormCtrl('password')?.touched || submitted)">
+          This field is required!
+        </div>
+      </div>
     </div>
-    <div class="button">
-      <button class="btn" type="submit">Login</button>
+    <div class="modal-button">
+      <button class="modal-btn" type="submit">Login</button>
     </div>
-  </div>
+    </div>
 </form>

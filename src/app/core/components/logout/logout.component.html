@@ -1,14 +1,14 @@
 
   <div class="modal-overlay best-card">
   <div class="modal-content">
-    <div class="close-btn" (click)="close()">X</div> 
+    <div class="modal-close-btn" (click)="close()">X</div> 
         <div class="container">
-            <div class="know-more">
+            <div class="title">
             Are you sure you want to logout?
             </div>
-            <div class="button">
-            <button class="btn" type="button" (click)="logout()">yes</button>
-            <button class="btn" type="button"  (click)="close()">no</button>
+            <div class="modal-button">
+            <button class="modal-btn" type="button" (click)="logout()">Yes</button>
+            <button class="modal-btn" type="button"  (click)="close()">No</button>
             </div>
         </div>
   </div>

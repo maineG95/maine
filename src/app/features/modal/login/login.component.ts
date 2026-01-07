@@ -19,6 +19,7 @@ export class LoginComponent {
 
   loginForm: FormGroup;
   isLoggedIn: boolean = false;
+  submitted = false;
 
   constructor(
     private formBuilder: FormBuilder,
@@ -40,7 +41,7 @@ export class LoginComponent {
     }
   }
 
-    get loginControl() {
+  get loginControl() {
     return this.loginForm.controls;
   }
 
@@ -48,8 +49,8 @@ export class LoginComponent {
     return this.loginForm.get(name);
   }
 
-
   submitLoginForm() {
+    this.submitted = true; 
     const { mobileNumber, password } = this.loginForm.value;
 
     const storedUsers = JSON.parse(localStorage.getItem('accounts') || '[]');
@@ -64,15 +65,14 @@ export class LoginComponent {
 
       setTimeout(() => {
         this.router.navigate(['/']); 
-        window.location.reload();  // You can also navigate to login route here
+        window.location.reload(); 
       }, 1000);
     } else {
       this.swal.toastInfo('Invalid Credentials!');
     }
   }
 
-    // Handle the event when the "Sign Up" button is clicked
   switchToSignUp() {
-    this.switchToSignUpEvent.emit();  // Emit event to switch to SignUp in the parent
+    this.switchToSignUpEvent.emit(); 
   }
 }

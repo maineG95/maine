@@ -19,7 +19,7 @@ export class SignUpComponent {
     this.switchToLoginEvent.emit();  // Emit event to switch to Login in the parent
   }
 
-
+ submitted = false;
  registerForm: FormGroup;
  statusMessage: string = '';  
 
@@ -65,9 +65,9 @@ export class SignUpComponent {
   registerFormCtrl(name: string) {
     return this.registerForm.get(name);
   }
-
   
   submitRegisterForm() {
+    this.submitted = true; 
     if (this.registerForm.valid) {
       const formData = this.registerForm.value;
 

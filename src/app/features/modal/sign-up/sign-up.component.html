@@ -1,9 +1,9 @@
 <form [formGroup]="registerForm" (ngSubmit)="submitRegisterForm()">
   <div class="container">
     <div class="">
-      <p class="title">Create an Account</p>
+      <p class="modal-title">Create an Account</p>
     </div>
-    <div class="know-more">
+    <div class="modal-sub-title">
       Already have an Account?
       <span type="button" class="sign-up" (click)="goBackToLogin()">Login</span>
     </div>
@@ -12,10 +12,14 @@
             <label for="firstName" class="label">First Name</label>
             <input 
                 type="text"
-                formControlName="firstName"
+                formControlName="firstName"+
                 class="input"
                 id="firstName"
+                [ngClass]="{'is-invalid': (registerFormCtrl('firstName')?.invalid && (registerFormCtrl('firstName')?.touched || submitted))}"
             />
+            <div class="invalid-feedback" *ngIf="registerFormCtrl('firstName')?.hasError('required') && (registerFormCtrl('firstName')?.touched || submitted)">
+                This field is required!
+            </div>
         </div>
         <div class="creds">
             <label for="lastName" class="label">Last Name</label>
@@ -24,7 +28,11 @@
                 formControlName="lastName"
                 class="input"
                 id="lastName"
+                [ngClass]="{'is-invalid': (registerFormCtrl('lastName')?.invalid && (registerFormCtrl('lastName')?.touched || submitted))}"
             />
+            <div class="invalid-feedback" *ngIf="registerFormCtrl('lastName')?.hasError('required') && (registerFormCtrl('lastName')?.touched || submitted)">
+                This field is required!
+            </div>
         </div>
     </div>
     <div class="details">
@@ -35,7 +43,15 @@
                 formControlName="mobileNumber"
                 class="input"
                 id="mobileNumber"
+                [ngClass]="{'is-invalid': (registerFormCtrl('mobileNumber')?.invalid && (registerFormCtrl('mobileNumber')?.touched || submitted))}"
             />
+            <div class="invalid-feedback" *ngIf="registerFormCtrl('mobileNumber')?.hasError('required') && (registerFormCtrl('mobileNumber')?.touched || submitted)">
+
+                This field is required!
+            </div>
+            <div class="invalid-feedback" *ngIf="registerFormCtrl('mobileNumber')?.hasError('pattern')">
+                Please enter a valid Philippine mobile number (e.g., 09123456789).
+            </div>
         </div>
         <div class="creds">
             <label for="email" class="label">Email</label>
@@ -44,7 +60,14 @@
                 formControlName="email"
                 class="input"
                 id="email"
+                [ngClass]="{'is-invalid': (registerFormCtrl('email')?.invalid && (registerFormCtrl('email')?.touched || submitted))}"
             />
+            <div class="invalid-feedback" *ngIf="registerFormCtrl('email')?.hasError('required') && (registerFormCtrl('email')?.touched || submitted)">
+                This field is required!
+            </div>
+            <div class="invalid-feedback" *ngIf="registerFormCtrl('email')?.hasError('email')">
+                Please enter a valid email address (e.g., example&#64;domain.com).
+            </div>
         </div>
     </div>
     <div class="details">
@@ -55,7 +78,14 @@
                 formControlName="password"
                 class="input"
                 id="password"
+                [ngClass]="{'is-invalid': (registerFormCtrl('password')?.invalid && (registerFormCtrl('password')?.touched || submitted))}"
             />
+            <div class="invalid-feedback" *ngIf="registerFormCtrl('password')?.hasError('required') && (registerFormCtrl('password')?.touched || submitted)">
+                This field is required!
+            </div>
+            <div class="invalid-feedback" *ngIf="registerFormCtrl('password')?.hasError('minlength')">
+                Password must be at least 6 characters long.
+            </div>
         </div>
         <div class="creds">
             <label for="confirmPassword" class="label"> Confirm Password</label>
@@ -64,16 +94,21 @@
                 formControlName="confirmPassword"
                 class="input"
                 id="confirmPassword"
+                [ngClass]="{'is-invalid': (registerFormCtrl('confirmPassword')?.invalid && (registerFormCtrl('confirmPassword')?.touched || submitted))}"
             />
+            <div class="invalid-feedback" *ngIf="registerFormCtrl('confirmPassword')?.hasError('required') && (registerFormCtrl('confirmPassword')?.touched || submitted)">
+                Please confirm your password.
+            </div>
+            <div class="invalid-feedback" *ngIf="registerFormCtrl('confirmPassword')?.hasError('minlength')">
+                Password must be at least 6 characters long.
+            </div>
+            <div class="invalid-feedback" *ngIf="registerFormCtrl('confirmPassword')?.hasError('passwordsMismatch')">
+                Passwords do not match.
+            </div>
         </div>
-
     </div>
-
-    
-    
-
-    <div class="button">
-      <button class="btn" type="submit">Register</button>
+    <div class="modal-button">
+      <button class="modal-btn" type="submit">Register</button>
     </div>
   </div>
 </form>

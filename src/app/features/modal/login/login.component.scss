@@ -1,32 +1,13 @@
 @import "colors.scss";
 
 .container {
-    // padding:5px;
-//   min-height: 100vh;
   color:$charcoal;
-  
-}
-
-.title {
-  text-align: center;
-  font-size: 24px;
-  font-weight: bold;
-  padding-top: 30px;
-  margin: 0px;
-  color:$coral;
-  line-height: 2;
-}
-
-.know-more {
-    text-align: center;
-    padding-bottom: 30px;
 }
 
 .sign-up{
   color:$coral;
   cursor: pointer;
   transition: color 0.3s, transform 0.3s ease-in-out;
-  font-size: 16px;
 }
 
 .sign-up:hover {
@@ -44,31 +25,26 @@
     padding: 5px;
 }
 
+.section{
+  // max-width: 250px;
+  // width: 100%;
+}
+
 .input{
     border-radius: 5px;
     border:1px solid $coral;
     padding: 5px;
-    max-width: 220px;
-    width: 100%;
-}
-.button{
-    text-align: center;
-    padding: 20px;
-    
 }
 
-.btn {
-  padding: 8px 30px;
-  border: none;
-  border-radius: 4px;
-  background: $coral;
-  color: $textPrimary;
-  cursor: pointer;
-  transition: 0.5s;
-
+.know-more,.sign-up,.label {
+  font-size: 16px;
 }
 
-.btn:hover {
-  background:$softPink;
-  transform: scale(1.05); 
+@media (max-width: 768px) {
+  .title {
+    font-size: 20px;
+  }
+  .sign-up,.label {
+    font-size: 14px;
+  }
 }
