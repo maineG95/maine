@@ -48,14 +48,12 @@
     font-size: 16px;
 }
 
-
 .invalid-feedback{
   color: red;
   font-size: 12px;
   font-style: italic;
   padding: 5px;
 }
-
 
 .modal-button{
   display: flex; 
@@ -86,6 +84,58 @@
     font-size: 14px;
   }
 }
+
+
+// //website content
+// .web-title {
+//   text-align: start;
+//   font-size: 24px;
+//   font-weight: bold;
+//   padding-top: 10px;
+// }
+
+// .web-section-heading {
+//   font-size:20px;
+//   font-weight: bold;
+//   text-align: center;
+// }
+
+// .web-training-title {
+//   font-weight: bold;
+//   text-align: start;
+// }
+
+// .web-content {
+//   font-size: 18px;
+//   text-align: center;
+//   color:$charcoal;
+// }
+
+// .section-heading i {
+//   font-size: 24px; 
+//   color:$coral; 
+//   padding: 0px 10px;
+// }
+
+// @media (max-width: 768px) {
+//   .web-title {
+//     font-size: 20px; 
+//   }
+//   .web-section-heading  {
+//     font-size: 18px; 
+//   }
+//   .web-content  {
+//     font-size: 16px;
+//   }
+//   .section-heading i {
+//     font-size: 20px;  
+//   }
+// }
+
+
+
+
+
 
 
 

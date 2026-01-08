@@ -5,13 +5,12 @@
   color:$charcoal;
 }
 
-.title {
-  text-align: start;
-  font-size: 24px;
-  font-weight: bold;
-  padding-top: 10px;
-
-}
+// .title {
+//   text-align: start;
+//   font-size: 24px;
+//   font-weight: bold;
+//   padding-top: 10px;
+// }
 
 .section-title {
   margin-bottom: 20px;
@@ -21,23 +20,23 @@
   margin: 40px 0px;
 }
 
-.content {
-  font-size: 18px;
-  text-align: center;
-  color:$charcoal;
-}
+// .content {
+//   font-size: 18px;
+//   text-align: center;
+//   color:$charcoal;
+// }
 
-.section-heading {
-  font-size:20px;
-  font-weight: bold;
-  text-align: center;
-}
+// .section-heading {
+//   font-size:20px;
+//   font-weight: bold;
+//   text-align: center;
+// }
 
-.training-title {
-  font-size:large;
-  font-weight: bold;
-  text-align: start;
-}
+// .training-title {
+//   font-size:large;
+//   font-weight: bold;
+//   text-align: start;
+// }
 
 .flex-container {
   display: flex;
@@ -48,26 +47,21 @@
   width:430px;
 }
 
-.section-heading i {
-  font-size: 24px; /* Icon size */
-  color:$coral; /* Color for icons */
-  padding: 0px 10px;
-}
+// .section-heading i {
+//   font-size: 24px; /* Icon size */
+//   color:$coral; /* Color for icons */
+//   padding: 0px 10px;
+// }
 
 
 /* ========== Mobile View (Including iPad Mini) ========== */
 @media (max-width: 768px) {
   .container {
-    padding: 0px 15px; /* Reduced padding for mobile */
+    padding: 0px 15px; 
   }
 
   .mid-cards{
     width:auto;
-  }
-
-  .title {
-    font-size: 20px;  /* Smaller title font size */
-    // text-align: center; /* Center align the title */
   }
 
   .section-title {
@@ -75,32 +69,11 @@
   }
 
   .cards {
-    margin: 20px 0px; /* Reduced margin for cards */
+    margin: 20px 0px; 
   }
-
-  .content {
-    font-size: 16px; /* Smaller font size for mobile */
-  }
-
-  .section-heading {
-    font-size: 18px; /* Smaller section heading font size */
-  }
-
-  .training-title {
-    font-size: medium; /* Slightly smaller font size for training titles */
-  }
-
-  /* Flex container adjustments for mobile view */
+  
   .flex-container {
-    flex-direction: column; /* Stack items vertically */
-    // align-items: center;
-
-    // gap: 40px;
-  }
-
-  /* Adjust icon size for section headings */
-  .section-heading i {
-    font-size: 20px;  /* Smaller icons */
+    flex-direction: column; 
   }
 }
 
