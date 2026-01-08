@@ -49,8 +49,8 @@
 }
 
 .section-heading i {
-  font-size: 24px; /* Icon size */
-  color:$coral; /* Color for icons */
+  font-size: 24px;
+  color:$coral; 
   padding: 0px 10px;
 }
 
@@ -58,7 +58,7 @@
 /* ========== Mobile View (Including iPad Mini) ========== */
 @media (max-width: 768px) {
   .container {
-    padding: 0px 15px; /* Reduced padding for mobile */
+    padding: 0px 15px; 
   }
 
   .mid-cards{
@@ -66,8 +66,7 @@
   }
 
   .title {
-    font-size: 20px;  /* Smaller title font size */
-    // text-align: center; /* Center align the title */
+    font-size: 20px;  
   }
 
   .section-title {
@@ -75,35 +74,29 @@
   }
 
   .cards {
-    margin: 20px 0px; /* Reduced margin for cards */
+    margin: 20px 0px;
   }
 
   .content {
-    font-size: 16px; /* Smaller font size for mobile */
+    font-size: 16px;
   }
 
   .section-heading {
-    font-size: 18px; /* Smaller section heading font size */
+    font-size: 18px;
   }
 
   .training-title {
-    font-size: medium; /* Slightly smaller font size for training titles */
+    font-size: medium; 
   }
 
-  /* Flex container adjustments for mobile view */
   .flex-container {
-    flex-direction: column; /* Stack items vertically */
-    // align-items: center;
-
-    // gap: 40px;
+    flex-direction: column; 
   }
 
-  /* Adjust icon size for section headings */
   .section-heading i {
-    font-size: 20px;  /* Smaller icons */
+    font-size: 20px;  
   }
 }
-
 
 /* ========== Tablet View ========== */
 @media (min-width: 769px) and (max-width: 1024px) {
