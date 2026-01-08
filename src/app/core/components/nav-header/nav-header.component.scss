@@ -24,8 +24,8 @@ header {
   font-weight: bold;
   font-size: 40px;
   margin: -7px;
-
 }
+
 .sub-name{
   color:$charcoal;
   font-size: 8px;
@@ -46,7 +46,6 @@ header {
   margin-left: auto; 
 }
 
-
 .desktop-nav ul {
   list-style: none;
   display: flex;
@@ -59,7 +58,7 @@ header {
   color:$charcoal;
   font-weight: bold;
   transition: color 0.3s ease;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .desktop-nav a:hover {
@@ -114,13 +113,6 @@ header {
   font-weight: bold;
 }
 
-
-.user-profile img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
-
 .hamburger-menu {
   display: none;
   cursor: pointer;
@@ -134,15 +126,9 @@ header {
   background-color:$green;
 }
 
-/* Mobile View */
 @media (max-width: 768px) {
   header {
     padding: 5px 20px;
-  }
-
-  .logo img {
-    width: 40px; 
-    height: 40px;
   }
 
   .desktop-nav {
@@ -231,7 +217,6 @@ header {
     display: none; 
   }
 }
-
 
 /* Desktop View */
 @media (min-width: 1025px) {
