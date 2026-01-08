@@ -28,7 +28,7 @@
   right: 20px; 
   font-size: 16px;
   cursor: pointer;
-  color: $coral;
+  color: $softPink;
   font-weight: bold;
 }
 
@@ -68,14 +68,14 @@
   padding: 8px 50px;
   border: none;
   border-radius: 4px;
-  background: $coral;
-  color: $textPrimary;
+  background: $softPink;
+  color: $charcoal;
   cursor: pointer;
   transition: 0.5s;
 }
 
 .modal-btn:hover {
-  background:$softPink;
+  background:$lightCoral;
   transform: scale(1.05); 
 }
 
