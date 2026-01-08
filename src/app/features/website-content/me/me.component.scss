@@ -5,13 +5,6 @@
   color:$charcoal;
 }
 
-// .title {
-//   text-align: start;
-//   font-size: 24px;
-//   font-weight: bold;
-//   padding-top: 10px;
-// }
-
 .section-title {
   margin-bottom: 20px;
 }
@@ -19,24 +12,6 @@
 .cards{
   margin: 40px 0px;
 }
-
-// .content {
-//   font-size: 18px;
-//   text-align: center;
-//   color:$charcoal;
-// }
-
-// .section-heading {
-//   font-size:20px;
-//   font-weight: bold;
-//   text-align: center;
-// }
-
-// .training-title {
-//   font-size:large;
-//   font-weight: bold;
-//   text-align: start;
-// }
 
 .flex-container {
   display: flex;
@@ -46,13 +21,6 @@
 .mid-cards{
   width:430px;
 }
-
-// .section-heading i {
-//   font-size: 24px; /* Icon size */
-//   color:$coral; /* Color for icons */
-//   padding: 0px 10px;
-// }
-
 
 /* ========== Mobile View (Including iPad Mini) ========== */
 @media (max-width: 768px) {
@@ -71,12 +39,11 @@
   .cards {
     margin: 20px 0px; 
   }
-  
+
   .flex-container {
     flex-direction: column; 
   }
 }
-
 
 /* ========== Tablet View ========== */
 @media (min-width: 769px) and (max-width: 1024px) {

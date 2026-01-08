@@ -1,5 +1,7 @@
 @import "variable";
 
+//Modal
+
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -85,52 +87,62 @@
   }
 }
 
+//END of Modal
 
-// //website content
-// .web-title {
-//   text-align: start;
-//   font-size: 24px;
-//   font-weight: bold;
-//   padding-top: 10px;
-// }
+//---------------------------------------------------------
 
-// .web-section-heading {
-//   font-size:20px;
-//   font-weight: bold;
-//   text-align: center;
-// }
+//website content
+.cards{
+  margin: 40px 0px;
+}
 
-// .web-training-title {
-//   font-weight: bold;
-//   text-align: start;
-// }
+.web-title {
+  text-align: start;
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 10px;
+}
 
-// .web-content {
-//   font-size: 18px;
-//   text-align: center;
-//   color:$charcoal;
-// }
+.web-section-heading {
+  font-size:20px;
+  font-weight: bold;
+  text-align: center;
+}
 
-// .section-heading i {
-//   font-size: 24px; 
-//   color:$coral; 
-//   padding: 0px 10px;
-// }
+.web-training-title {
+  font-weight: bold;
+  text-align: start;
+}
 
-// @media (max-width: 768px) {
-//   .web-title {
-//     font-size: 20px; 
-//   }
-//   .web-section-heading  {
-//     font-size: 18px; 
-//   }
-//   .web-content  {
-//     font-size: 16px;
-//   }
-//   .section-heading i {
-//     font-size: 20px;  
-//   }
-// }
+.web-content {
+  font-size: 18px;
+  text-align: center;
+  color:$charcoal;
+}
+
+.section-heading i {
+  font-size: 24px; 
+  color:$coral; 
+  padding: 0px 10px;
+}
+
+@media (max-width: 768px) {
+  .web-title {
+    font-size: 20px; 
+  }
+  .web-section-heading  {
+    font-size: 18px; 
+  }
+  .web-content  {
+    font-size: 16px;
+  }
+  .section-heading i {
+    font-size: 20px;  
+  }
+}
+//END of website content
+
+//-----------------------------------------------------------------
 
 
 
