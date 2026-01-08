@@ -1,22 +1,30 @@
 import { Component, HostListener } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { ModalComponent } from "../../../features/modal/modal.component";
+import { CommonModule } from '@angular/common';
+import { LocalStorageService } from '../services/local-storage-service';
+import { LogoutComponent } from "../logout/logout.component";
 
 @Component({
   selector: 'app-nav-header',
   standalone: true,
-  imports: [RouterModule],
+  imports: [CommonModule, RouterModule, ModalComponent, LogoutComponent],
   templateUrl: './nav-header.component.html',
   styleUrl: './nav-header.component.scss'
 })
 export class NavHeaderComponent {
- isLoggedIn = true;
- isMobileNavOpen = false;
- dropdownOpen = false; 
-mobileDropdownOpen = false; // Mobile dropdown state
- activeLink: string = '';  // To track the active link
+  isModalVisible = false;
+  isLogoutModalVisible = false; 
+  currentView: 'login' | 'signup' = 'login'; 
 
+  isLoggedIn: boolean = false;
+  isMobileNavOpen = false;
+  dropdownOpen = false; 
+  mobileDropdownOpen = false; 
+  activeLink: string = ''; 
+ 
   setActiveLink(link: string) {
-    this.activeLink = link; // Set the active link
+    this.activeLink = link; 
   }
 
   toggleMobileNav() {
@@ -28,21 +36,59 @@ mobileDropdownOpen = false; // Mobile dropdown state
   }
 
   toggleDropdown(event: MouseEvent) {
-    // Prevent clicking on the menu from closing immediately
     event.stopPropagation();
     this.dropdownOpen = !this.dropdownOpen;
   }
   
   toggleMobileDropdown(event: MouseEvent) {
-    event.preventDefault();  // Prevent the default anchor behavior
-    this.mobileDropdownOpen = !this.mobileDropdownOpen;  // Toggle the mobile dropdown menu
+    event.preventDefault();  
+    this.mobileDropdownOpen = !this.mobileDropdownOpen;  
   }
-   // Close the dropdown if clicked outside
   @HostListener('document:click', ['$event'])
   closeDropdownOnOutsideClick(event: MouseEvent) {
     const dropdownElement = document.querySelector('.dropdown');
     if (dropdownElement && !dropdownElement.contains(event.target as Node)) {
       this.dropdownOpen = false;
     }
+  }
+
+  constructor(
+    private storage: LocalStorageService,
+  ) {}
+
+  ngOnInit(): void {
+    const loggedIn = this.storage.get('isLoggedIn');
+    if (loggedIn === 'true') {
+      this.isLoggedIn = true;
+    } else {
+      this.isLoggedIn = false;
+    }
+  }
+
+  openModal() {
+    this.isModalVisible = true;
+    this.currentView = 'login'; 
+     this.closeMobileNav(); 
+  }
+
+  closeModalFromChild() {
+    this.isModalVisible = false;
+  }
+
+  openSignUp() {
+    this.currentView = 'signup';
+  }
+
+  openLogin() {
+    this.currentView = 'login';
+  }
+
+  openLogout() {
+    this.isLogoutModalVisible = true;  
+     this.closeMobileNav(); 
+  }
+
+  closeLogoutModal() {
+    this.isLogoutModalVisible = false;  
   }
 }

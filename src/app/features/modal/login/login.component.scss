@@ -1,0 +1,50 @@
+@import "colors.scss";
+
+.container {
+  color:$charcoal;
+}
+
+.sign-up{
+  color:$coral;
+  cursor: pointer;
+  transition: color 0.3s, transform 0.3s ease-in-out;
+}
+
+.sign-up:hover {
+  color:$lightCoral;
+  transform: scale(1.05);
+}
+
+.creds{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+}
+
+.label{
+    padding: 5px;
+}
+
+.section{
+  // max-width: 250px;
+  // width: 100%;
+}
+
+.input{
+    border-radius: 5px;
+    border:1px solid $coral;
+    padding: 5px;
+}
+
+.know-more,.sign-up,.label {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 20px;
+  }
+  .sign-up,.label {
+    font-size: 14px;
+  }
+}

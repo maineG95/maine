@@ -15,6 +15,7 @@
 .view .resume {
   cursor: pointer;
   transition: color 0.3s, transform 0.3s ease-in-out;
+  font-size: 16px;
 }
 
 .view .resume:hover {
@@ -30,6 +31,7 @@
   text-align: center;
   display: flex;
   align-items: center;
+  font-size: 16px;
 }
 
 .footer-icon {
@@ -44,10 +46,10 @@
   transform: scale(1.05);
 }
 
-
 .address .email {
   cursor: pointer;
   transition: color 0.3s, transform 0.3s ease-in-out;
+  font-size: 16px;
 }
 
 .address .email:hover {
@@ -58,3 +60,43 @@
 .address .email:active {
   transform: scale(0.98);
 } 
+
+/* ========= Tablet ========= */
+@media (max-width: 991px) {
+  .footer {
+    padding: 40px 50px;  // Adjust padding for tablet
+  }
+}
+
+/* ========= Mobile ========= */
+@media (max-width: 550px) {
+  .footer {
+    padding: 20px; 
+  }
+
+  .details {
+    flex-direction: column;  // Stack elements vertically
+    align-items: center;     // Center align items
+    gap: 0px;  
+  }
+
+  .socials {
+    line-height: 0;
+    font-size: 14px;   
+  }
+
+  .footer-icon {
+    font-size: 18px; 
+    margin:0px 2px;
+  }
+
+  .view .resume {
+    font-size: 14px;      
+    margin:0 !important ;
+  }
+
+  .address .email {
+    font-size: 14px;   
+    margin:0 !important;
+  }
+}

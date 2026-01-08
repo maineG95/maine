@@ -51,3 +51,129 @@
   color:$coral;
   padding-right:10px;
 }
+
+
+
+/* ========== Mobile View ========== */
+@media (max-width: 768px) {
+  .container {
+    padding: 0px 10px;/* Less padding for mobile */
+  }
+
+  .title {
+    font-size: 20px;  /* Adjust title font size */
+    // padding-top: 10px;
+  }
+
+  .cards {
+    // margin: 20px 0px; /* Less margin between cards */
+  }
+
+  .content {
+    font-size: 16px;  /* Smaller content font for mobile */
+    // margin-left: 10px; /* Adjust margin */
+  }
+
+  .section-heading {
+    font-size: 18px;  /* Adjust section heading font size */
+    flex-direction: column; /* Stack the job title and date on mobile */
+    align-items: flex-start;  /* Align items to the start */
+  padding-bottom: 10px;
+
+  }
+
+  .sub-heading {
+    font-size: 14px; /* Adjust sub-heading font size */
+    // margin-top: 5px;
+  }
+
+  .section-heading i {
+    font-size: 20px;  /* Adjust icon size */
+  }
+
+  .flex-container {
+    flex-direction: column; /* Stack cards vertically */
+
+  //    display: flex;
+  // justify-content: center;
+  // gap: 20px;
+  }
+
+  .cards {
+    // width: 100%; /* Ensure cards take up full width on mobile */
+  }
+}
+
+/* ========== Tablet View ========== */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    padding: 20px; /* Adjust padding for tablets */
+  }
+
+  .title {
+    font-size: 22px;  /* Slightly smaller title font for tablet */
+  }
+
+  .section-heading {
+    font-size: 18px;  /* Adjust section heading font size */
+  }
+
+  .content {
+    font-size: 17px;  /* Slightly smaller content font for tablet */
+  }
+
+  .sub-heading {
+    font-size: 14px; /* Smaller font size for sub-heading */
+  }
+
+  .section-heading i {
+    font-size: 22px;  /* Slightly larger icon size for tablet */
+  }
+
+  .flex-container {
+    flex-direction: row; /* Arrange items in a row */
+    gap: 30px; /* Increase gap between items */
+  }
+
+  .cards {
+    width: 48%; /* Adjust width for cards to show 2 in a row */
+  }
+}
+
+/* ========== Desktop View ========== */
+@media (min-width: 1025px) {
+  .container {
+    padding: 40px 100px; /* More padding for desktop */
+  }
+
+  .title {
+    font-size: 24px;  /* Default title font size for desktop */
+  }
+
+  .section-heading {
+    font-size: 20px;  /* Default section heading font size */
+  }
+
+  .content {
+    font-size: 18px;  /* Default content font size */
+  }
+
+  .sub-heading {
+    font-size: 16px;  /* Default sub-heading font size */
+  }
+
+  .section-heading i {
+    font-size: 24px;  /* Default icon size for desktop */
+  }
+
+  .flex-container {
+    flex-direction: row; /* Keep items in a row for desktop */
+    gap: 30px; /* Moderate gap between items */
+  }
+
+  .cards {
+    width: 48%; /* Adjust card width to show 2 cards side-by-side */
+  }
+}
+
+
