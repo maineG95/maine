@@ -98,6 +98,7 @@ export class NavHeaderComponent {
     
     if (this.isLoggedIn) {
       this.router.navigate([route]);
+      this.isMobileNavOpen = false;
     } else {
       this.router.navigate(['']);
       this.openModal();
