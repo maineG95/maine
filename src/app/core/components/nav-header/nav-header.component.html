@@ -13,9 +13,9 @@
           <li class="dropdown">
             <a class="drop">Work Experience  <span class="arrow-down" (click)="toggleDropdown($event)"></span></a>
             <ul class="dropdown-menu" [class.show]="dropdownOpen">
-              <li><a routerLink="/skytech" routerLinkActive="active-link"(click)="closeMobileNav()">Skytech Inc.</a></li>
-              <li><a routerLink="/best" routerLinkActive="active-link"(click)="closeMobileNav()">Best Inc.</a></li>
-              <li><a routerLink="/artc" routerLinkActive="active-link"(click)="closeMobileNav()">Artc Inc.</a></li>
+              <li><a routerLink="/skytech" routerLinkActive="active-link" (click)="checkLoginAndNavigate($event, '/skytech')">Skytech Inc.</a></li>
+              <li><a routerLink="/best" routerLinkActive="active-link" (click)="checkLoginAndNavigate($event, '/best')">Best Inc.</a></li>
+              <li><a routerLink="/artc" routerLinkActive="active-link" (click)="checkLoginAndNavigate($event, '/artc')">Artc Inc.</a></li>
             </ul>
           </li>
         </ul>
@@ -47,9 +47,9 @@
       <li class="dropdown" (click)="toggleMobileDropdown($event)">
         <a href="#">Work Experience<span class="arrow-down" ></span></a>
         <ul class="dropdown-menu" [class.show]="mobileDropdownOpen">
-          <li><a routerLink="/skytech" (click)="closeMobileNav()">Skytech Inc.</a></li>
-          <li><a routerLink="/best" (click)="closeMobileNav()">Best Inc.</a></li>
-          <li><a routerLink="/artc" (click)="closeMobileNav()">Artc. Inc.</a></li>
+          <li><a routerLink="/skytech" (click)="checkLoginAndNavigate($event, '/skytech')">Skytech Inc.</a></li>
+          <li><a routerLink="/best" (click)="checkLoginAndNavigate($event, '/best')">Best Inc.</a></li>
+          <li><a routerLink="/artc" (click)="checkLoginAndNavigate($event, '/artc')">Artc Inc.</a></li>
         </ul>
       </li>
       <li><a routerLink="/contacts" (click)="closeMobileNav()">Contact Me</a></li>

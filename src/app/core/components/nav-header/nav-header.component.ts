@@ -69,7 +69,7 @@ export class NavHeaderComponent {
   openModal() {
     this.isModalVisible = true;
     this.currentView = 'login'; 
-     this.closeMobileNav(); 
+    this.closeMobileNav(); 
   }
 
   closeModalFromChild() {
