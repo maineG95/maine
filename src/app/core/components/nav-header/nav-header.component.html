@@ -7,8 +7,9 @@
     <nav class="desktop-nav">
         <ul>
           <li><a routerLink="/" routerLinkActive="active-link">Home</a></li>
-          <li><a routerLink="/me" routerLinkActive="active-link">About Me</a></li>
-          <li><a routerLink="/skills" routerLinkActive="active-link">Skills</a></li>
+          <!-- <li><a routerLink="/me" routerLinkActive="active-link">About Me</a></li> -->
+          <li><a routerLink="/me" routerLinkActive="active-link" (click)="checkLoginAndNavigate($event, '/me')">About Me</a></li>
+          <li><a routerLink="/skills" routerLinkActive="active-link" (click)="checkLoginAndNavigate($event, '/skills')">Skills</a></li>
           <li class="dropdown">
             <a class="drop">Work Experience  <span class="arrow-down" (click)="toggleDropdown($event)"></span></a>
             <ul class="dropdown-menu" [class.show]="dropdownOpen">
@@ -40,8 +41,9 @@
     <div class="close-btn" (click)="closeMobileNav()">X</div>  <!-- Close button -->
     <ul>
       <li><a routerLink="/" (click)="closeMobileNav()">Home</a></li>
-      <li><a routerLink="/me" (click)="closeMobileNav()">About Me</a></li>
-      <li><a routerLink="/skills" (click)="closeMobileNav()">Skills</a></li>
+      <!-- <li><a routerLink="/me" (click)="closeMobileNav()">About Me</a></li> -->
+    <li><a routerLink="/me" (click)="checkLoginAndNavigate($event, '/me')">About Me</a></li>
+    <li><a routerLink="/skills" (click)="checkLoginAndNavigate($event, '/skills')">Skills</a></li>
       <li class="dropdown" (click)="toggleMobileDropdown($event)">
         <a href="#">Work Experience<span class="arrow-down" ></span></a>
         <ul class="dropdown-menu" [class.show]="mobileDropdownOpen">

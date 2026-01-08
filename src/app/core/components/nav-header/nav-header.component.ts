@@ -1,5 +1,5 @@
 import { Component, HostListener } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { ModalComponent } from "../../../features/modal/modal.component";
 import { CommonModule } from '@angular/common';
 import { LocalStorageService } from '../services/local-storage-service';
@@ -54,6 +54,7 @@ export class NavHeaderComponent {
 
   constructor(
     private storage: LocalStorageService,
+     private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -90,5 +91,16 @@ export class NavHeaderComponent {
 
   closeLogoutModal() {
     this.isLogoutModalVisible = false;  
+  }
+
+  checkLoginAndNavigate(event: MouseEvent, route: string) {
+    event.preventDefault(); // Prevent default navigation
+    
+    if (this.isLoggedIn) {
+      this.router.navigate([route]);
+    } else {
+      this.router.navigate(['']);
+      this.openModal();
+    }
   }
 }
