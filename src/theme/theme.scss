@@ -1,7 +1,5 @@
 @import "variable";
 
-//Modal
-
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -86,67 +84,6 @@
     font-size: 14px;
   }
 }
-
-//END of Modal
-
-//---------------------------------------------------------
-
-//website content
-.cards{
-  margin: 40px 0px;
-}
-
-.web-title {
-  text-align: start;
-  font-size: 24px;
-  font-weight: bold;
-  padding-top: 10px;
-}
-
-.web-section-heading {
-  font-size:20px;
-  font-weight: bold;
-  text-align: center;
-}
-
-.web-training-title {
-  font-weight: bold;
-  text-align: start;
-}
-
-.web-content {
-  font-size: 18px;
-  text-align: center;
-  color:$charcoal;
-}
-
-.section-heading i {
-  font-size: 24px; 
-  color:$coral; 
-  padding: 0px 10px;
-}
-
-@media (max-width: 768px) {
-  .web-title {
-    font-size: 20px; 
-  }
-  .web-section-heading  {
-    font-size: 18px; 
-  }
-  .web-content  {
-    font-size: 16px;
-  }
-  .section-heading i {
-    font-size: 20px;  
-  }
-}
-//END of website content
-
-//-----------------------------------------------------------------
-
-
-
-
 
 
 
