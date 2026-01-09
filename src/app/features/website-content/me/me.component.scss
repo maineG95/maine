@@ -5,16 +5,15 @@
   color:$charcoal;
 }
 
+.section-title {
+  margin-bottom: 20px;
+}
+
 .title {
   text-align: start;
   font-size: 24px;
   font-weight: bold;
   padding-top: 10px;
-
-}
-
-.section-title {
-  margin-bottom: 20px;
 }
 
 .cards{
@@ -22,7 +21,7 @@
 }
 
 .content {
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
   color:$charcoal;
 }
@@ -34,7 +33,7 @@
 }
 
 .training-title {
-  font-size:large;
+  font-size:20px;
   font-weight: bold;
   text-align: start;
 }
@@ -61,16 +60,12 @@
     padding: 0px 15px; 
   }
 
-  .mid-cards{
-    width:auto;
+  .section-title {
+    text-align: center;
   }
 
   .title {
     font-size: 20px;  
-  }
-
-  .section-title {
-    text-align: center;
   }
 
   .cards {
@@ -78,7 +73,7 @@
   }
 
   .content {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .section-heading {
@@ -86,25 +81,31 @@
   }
 
   .training-title {
-    font-size: medium; 
+    font-size: 18px; 
   }
 
-  .flex-container {
+   .flex-container {
     flex-direction: column; 
-  }
-
-  .section-heading i {
-    font-size: 20px;  
-  }
-}
-
-/* ========== Tablet View ========== */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .flex-container {
-    flex-direction: column;
+     gap: 10px;
   }
 
   .mid-cards{
     width:auto;
   }
+ 
+  .section-heading i {
+    font-size: 15px;  
+    padding: 0px;
+  }
+}
+
+/* ========== Tablet View ========== */
+@media (min-width: 769px) and (max-width: 1024px) {
+  // .flex-container {
+  //   flex-direction: column;
+  // }
+
+  // .mid-cards{
+  //   width:auto;
+  // }
 }
