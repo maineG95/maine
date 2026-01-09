@@ -6,7 +6,7 @@
 }
 
 .sign-up{
-  color:$coral;
+  color:$softPink;
   cursor: pointer;
   transition: color 0.3s, transform 0.3s ease-in-out;
 }
@@ -31,21 +31,33 @@
 .input{
   width:250px;
   border-radius: 5px;
-  border:1px solid $coral;
+  border:1px solid $softPink;
   padding: 5px;
-}
-.input:focus {
-  border:1px solid $coral;
+  color:$charcoal;
+  font-size: 16px;
 }
 
+.input:focus {
+  border: 1px solid $softPink;
+  color: $charcoal;  /* Optional: Change text color when focused */
+}
+
+
 @media (max-width: 768px) {
-  .title {
+ .modal-title {
     font-size: 20px;
   }
-  .creds{
+  .modal-btn,.modal-sub-title,.label{
+    font-size: 14px;
+  }
+ .creds{
+    margin-bottom: 5px;
     font-size: 14px;
   }
   .label{
-    margin-bottom: 2px;
+    margin-bottom: 0px;
+  }
+   .input{
+    font-size: 14px;
   }
 }

@@ -2,10 +2,11 @@
 
 .container {
   color:$charcoal;
+  padding: 0px 20px;
 }
 
 .sign-up{
-  color:$coral;
+  color:$softPink;
   cursor: pointer;
   transition: color 0.3s, transform 0.3s ease-in-out;
 }
@@ -18,28 +19,56 @@
 .details{
   display: flex;
   justify-content: space-between;
-  padding: 5px 20px;
-  max-width: 150px;
-  width: 100%;
   gap: 10px;
 }
 
-.input{
-    border-radius: 5px;
-    border:1px solid $coral;
-    padding: 5px;
-}
-
-
-.details{
+.creds{
+  display:grid; 
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
   font-size: 16px;
 }
 
+.label{
+  margin-bottom: 5px;
+}
+
+.input{
+  width:250px;
+  border-radius: 5px;
+  border:1px solid $softPink;
+  padding: 5px;
+  color:$charcoal;
+  font-size: 16px;
+}
+
+.input:focus {
+  border: 1px solid $softPink;
+  color: $charcoal;  /* Optional: Change text color when focused */
+}
+
 @media (max-width: 768px) {
-  .title {
+  .modal-title {
     font-size: 20px;
   }
+  .modal-btn,.modal-sub-title,.label{
+    font-size: 14px;
+  }
   .details{
+    display:grid;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+  }
+  .creds{
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  .label{
+    margin-bottom: 0px;
+  }
+  .input{
     font-size: 14px;
   }
 }

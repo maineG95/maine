@@ -19,7 +19,7 @@
   border-radius: 10px;
   // max-width: 400px;
   width: auto;
-  border: 1px solid $lightCoral;
+  border: 1px solid $softPink;
 }
 
 .modal-close-btn {
@@ -29,7 +29,7 @@
   font-size: 16px;
   cursor: pointer;
   color: $charcoal;
-  font-weight: bold;
+  // font-weight: bold;
 }
 
 .modal-title {
@@ -38,7 +38,7 @@
   font-weight: bold;
   padding-top: 30px;
   margin: 0px;
-  color:$coral;
+  color:$softPink;
   line-height: 2;
 }
 
@@ -79,10 +79,26 @@
   transform: scale(1.05); 
 }
 
-@media (max-width: 768px) {
-  .modal-btn,.modal-sub-title {
-    font-size: 14px;
+
+
+//Cards
+.best-card {
+  background-color: #F8FAFC;
+  padding:18px;
+  border-radius: 20px;
+  border: 1px solid $softPink;
+  .content {
+    color: $charcoal;
+    font-family: Monserat;
+    font-size: 18px;
+    margin: 0;
   }
+}
+
+.best-card-shadow {
+  box-shadow: 5px 5px 10px 1px rgba(107, 107, 107, 0.4);
+  -webkit-box-shadow: 5px 5px 10px 1px rgba(107, 107, 107, 0.4);
+  -moz-box-shadow: 5px 5px 10px 1px rgba(107, 107, 107, 0.4);
 }
 
 
@@ -108,89 +124,85 @@
 
 // font style
 
-.theme-text {
-  font-family: $fontTheme;
-  font-weight: 500;
-}
+// .theme-text {
+//   font-family: $fontTheme;
+//   font-weight: 500;
+// }
 
-.theme-text-600 {
-  font-family: $fontTheme;
-  font-weight: 600;
-}
-.theme-text-700 {
-  font-family: $fontTheme;
-  font-weight: 700;
-}
-.theme-text-bold {
-  font-family: $fontThemeBold;
-  font-weight: 700;
-}
+// .theme-text-600 {
+//   font-family: $fontTheme;
+//   font-weight: 600;
+// }
+// .theme-text-700 {
+//   font-family: $fontTheme;
+//   font-weight: 700;
+// }
+// .theme-text-bold {
+//   font-family: $fontThemeBold;
+//   font-weight: 700;
+// }
 
 /// font sizes
 
-.f-xl {
-  font-size: $fontXl;
-}
-.f-lg {
-  font-size: $fontLg;
-}
-.f-med {
-  font-size: $fontMed;
-}
-.f-sm {
-  font-size: $fontSm;
-}
-.f-xs {
-  font-size: $fontXs;
-}
+// .f-xl {
+//   font-size: $fontXl;
+// }
+// .f-lg {
+//   font-size: $fontLg;
+// }
+// .f-med {
+//   font-size: $fontMed;
+// }
+// .f-sm {
+//   font-size: $fontSm;
+// }
+// .f-xs {
+//   font-size: $fontXs;
+// }
 
 /// btn design
 
-.orange-btn {
-  background-color: $turquoise;
-  color: white;
-  font-weight: 700;
-  font-family: $fontThemeBold;
-  border-radius: $btnRadius;
-}
-.black-outline-btn {
-  background-color: transparent;
-  color: $black;
-  font-weight: 700;
-  font-family: $fontThemeBold;
-  border-radius: $btnRadius;
-  border: $black solid 1.5px;
-}
-.purple-btn {
-  background-color: $turquoise;
-  color: white;
-  font-weight: 700;
-  font-family: $fontThemeBold;
-}
+// .orange-btn {
+//   background-color: $turquoise;
+//   color: white;
+//   font-weight: 700;
+//   font-family: $fontThemeBold;
+//   border-radius: $btnRadius;
+// }
+// .black-outline-btn {
+//   background-color: transparent;
+//   color: $black;
+//   font-weight: 700;
+//   font-family: $fontThemeBold;
+//   border-radius: $btnRadius;
+//   border: $black solid 1.5px;
+// }
+// .purple-btn {
+//   background-color: $turquoise;
+//   color: white;
+//   font-weight: 700;
+//   font-family: $fontThemeBold;
+// }
 
 // shadow
-.best-card-shadow {
-  box-shadow: 5px 5px 10px 1px rgba(107, 107, 107, 0.4);
-  -webkit-box-shadow: 5px 5px 10px 1px rgba(107, 107, 107, 0.4);
-  -moz-box-shadow: 5px 5px 10px 1px rgba(107, 107, 107, 0.4);
-}
+
 
 /// card design
 
 
-.best-card-2 {
-  border: $borderFadedGray2;
-  border-radius: $cardRadius;
-  background-color: white;
-  padding: $pdMed;
-}
+// .best-card-2 {
+//   border: $borderFadedGray2;
+//   border-radius: $cardRadius;
+//   background-color: white;
+//   padding: $pdMed;
+// }
 
 /// border design
 
-.purple-border {
-  border: 3px solid $purple;
-  border-radius: $cardRadius;
-}
+// .purple-border {
+//   border: 3px solid $purple;
+//   border-radius: $cardRadius;
+// }
 
 // input designs and labels
 // .form-label {
@@ -230,26 +242,14 @@
 // }
 
 /// btn sizes
-.btn-med {
-  width: $widthMed;
-}
-.my-btn-sm {
-  width: $widthSm;
-}
+// .btn-med {
+//   width: $widthMed;
+// }
+// .my-btn-sm {
+//   width: $widthSm;
+// }
 
 
 
-//Cards
-.best-card {
-  background-color: $surface;
-  padding: $pdMed;
-  border-radius: $cardRadius;
-  border: 1px solid $lightCoral;
-  .content {
-    color: $charcoal;
-    font-family: $fontTheme;
-    font-size: $fontMed;
-    margin: 0;
-  }
-}
+
 

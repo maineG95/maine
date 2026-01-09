@@ -1,6 +1,5 @@
 @import "colors.scss";
 
-
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -18,13 +17,14 @@
   background-color: $warmGray;
   padding: 5px;
   border-radius: 10px;
-  max-width: 400px;
-  width: 100%;
+  // max-width: 400px;
+  width: auto;
   border: 1px solid $coral;
 }
 
 .container {
   color:$charcoal;
+  padding: 0px 20px;
 }
 
 .title {
@@ -37,7 +37,15 @@
 }
 
 @media (max-width: 768px) {
+  .modal-close-btn {
+    font-size: 10px;
+  }
+
   .title{
+    font-size: 14px;
+  }
+  
+  .modal-btn{
     font-size: 14px;
   }
 }
