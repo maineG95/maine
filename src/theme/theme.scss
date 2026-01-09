@@ -17,8 +17,8 @@
   background-color: $warmGray;
   padding: 5px;
   border-radius: 10px;
-  max-width: 400px;
-  width: 100%;
+  // max-width: 400px;
+  width: auto;
   border: 1px solid $lightCoral;
 }
 
@@ -198,36 +198,36 @@
 //   font-weight: 600;
 //   font-family: $fontTheme;
 // }
-.input-design {
-  border: 2px solid $turquoise;
-  border-radius: 8px;
-  background-color: $purpleFaded2;
-  font-family: $fontTheme;
-}
-.input-design:focus {
-  background-color: $purpleFaded2;
-}
+// .input-design {
+//   border: 2px solid $turquoise;
+//   border-radius: 8px;
+//   background-color: $purpleFaded2;
+//   font-family: $fontTheme;
+// }
+// .input-design:focus {
+//   background-color: $purpleFaded2;
+// }
 
-.input-design-2 {
-  border: 2.5px solid $purpleFaded;
-  background-color: $white;
-  border-radius: 8px;
-  width: 100%;
-  font-family: $fontTheme;
-}
-.input-design-2:focus {
-  background-color: $white;
-}
-.input-design-3 {
-  border: 2px solid $turquoise;
-  background-color: $purpleFaded2;
-  border-radius: 8px;
-  width: 100%;
-  font-family: $fontTheme;
-}
-.input-design-3:focus {
-  background-color: $input3BgColor;
-}
+// .input-design-2 {
+//   border: 2.5px solid $purpleFaded;
+//   background-color: $white;
+//   border-radius: 8px;
+//   width: 100%;
+//   font-family: $fontTheme;
+// }
+// .input-design-2:focus {
+//   background-color: $white;
+// }
+// .input-design-3 {
+//   border: 2px solid $turquoise;
+//   background-color: $purpleFaded2;
+//   border-radius: 8px;
+//   width: 100%;
+//   font-family: $fontTheme;
+// }
+// .input-design-3:focus {
+//   background-color: $input3BgColor;
+// }
 
 /// btn sizes
 .btn-med {

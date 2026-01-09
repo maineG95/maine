@@ -2,6 +2,7 @@
 
 .container {
   color:$charcoal;
+  padding: 0px 20px;
 }
 
 .sign-up{
@@ -16,35 +17,35 @@
 }
 
 .creds{
-    display: flex;
-    justify-content: space-between;
-    padding: 5px 20px;
+  margin-bottom: 10px;
+  display:grid; 
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
 }
 
 .label{
-    padding: 5px;
-}
-
-.section{
-  // max-width: 250px;
-  // width: 100%;
+  margin-bottom: 5px;
 }
 
 .input{
-    border-radius: 5px;
-    border:1px solid $coral;
-    padding: 5px;
+  width:250px;
+  border-radius: 5px;
+  border:1px solid $coral;
+  padding: 5px;
 }
-
-.know-more,.sign-up,.label {
-  font-size: 16px;
+.input:focus {
+  border:1px solid $coral;
 }
 
 @media (max-width: 768px) {
   .title {
     font-size: 20px;
   }
-  .sign-up,.label {
+  .creds{
     font-size: 14px;
+  }
+  .label{
+    margin-bottom: 2px;
   }
 }
