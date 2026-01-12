@@ -10,14 +10,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 9999; 
 }
 
 .modal-content {
-  position: relative; /* Ensure the close button is positioned relative to the modal content */
+  position: relative;
   background-color: $warmGray;
   padding: 5px;
   border-radius: 10px;
-  // max-width: 400px;
   width: auto;
   border: 1px solid $softPink;
 }
@@ -29,7 +29,6 @@
   font-size: 16px;
   cursor: pointer;
   color: $charcoal;
-  // font-weight: bold;
 }
 
 .modal-title {

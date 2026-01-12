@@ -62,4 +62,4 @@
 <app-modal *ngIf="isModalVisible" (closeModalEvent)="closeModalFromChild()" (switchToSignUpEvent)="openSignUp()">
 </app-modal>
 
-<app-logout *ngIf="isLogoutModalVisible" (closeModalEvent)="closeLogoutModal()"></app-logout>
+<app-logout *ngIf="isLogoutModalVisible" (closeModalEvent)="closeLogoutModal()" (loggedOut)="handleLogout()"></app-logout>

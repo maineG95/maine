@@ -10,7 +10,8 @@ import { Router, RouterModule } from '@angular/router';
   styleUrl: './logout.component.scss'
 })
 export class LogoutComponent {
-   @Output() closeModalEvent = new EventEmitter<void>(); // Output to close the modal
+  @Output() closeModalEvent = new EventEmitter<void>(); // Output to close the modal
+  @Output() loggedOut = new EventEmitter<void>();
 
    isLoggedIn: boolean = false;
 
@@ -29,18 +30,19 @@ export class LogoutComponent {
     }
   }
 
-  logout(){
-    this.storage.remove('isLoggedIn');
-    this.storage.remove('username');
-    this.isLoggedIn = false;
-    this.swal.toastInfo('Logging out success!');
+  logout() {
+  this.storage.remove('isLoggedIn');
+  this.storage.remove('username');
+  this.isLoggedIn = false;
 
-  // Optionally, navigate to the login page or close the modal
-    setTimeout(() => {
-      this.router.navigate(['/']); 
-      window.location.reload();  // You can also navigate to login route here
-    }, 1000);
-  }
+  this.swal.toastInfo('Logged out successfully!');
+
+  setTimeout(() => {
+    this.loggedOut.emit();   // 🔥 notify parent
+    this.closeModalEvent.emit(); // close modal
+  }, 500);
+}
+
 
   close() {
     this.closeModalEvent.emit(); // Emit event to close modal

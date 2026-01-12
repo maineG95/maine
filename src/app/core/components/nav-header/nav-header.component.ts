@@ -104,4 +104,11 @@ export class NavHeaderComponent {
       this.openModal();
     }
   }
+  handleLogout() {
+    this.isLoggedIn = false;
+    this.isLogoutModalVisible = false;
+    this.dropdownOpen = false;
+    this.mobileDropdownOpen = false;
+    this.router.navigate(['/']);
+  }
 }
