@@ -33,9 +33,7 @@
 }
 
 .training-title {
-  font-size:20px;
   font-weight: bold;
-  text-align: start;
 }
 
 .flex-container {
@@ -43,21 +41,22 @@
   justify-content: center;
   gap: 20px;
 }
+
 .mid-cards{
   width:430px;
 }
 
 .section-heading i {
-  font-size: 24px;
+  font-size: 20px;
   color:$softPinkDarker; 
   padding: 0px 10px;
 }
 
 
-/* ========== Mobile View (Including iPad Mini) ========== */
+/* ========== Mobile View  ========== */
 @media (max-width: 768px) {
   .container {
-    padding: 0px 15px; 
+    padding: 0px 20px; 
   }
 
   .section-title {
@@ -80,13 +79,9 @@
     font-size: 18px;
   }
 
-  .training-title {
-    font-size: 18px; 
-  }
-
    .flex-container {
     flex-direction: column; 
-     gap: 10px;
+    gap: 10px;
   }
 
   .mid-cards{
@@ -94,18 +89,14 @@
   }
  
   .section-heading i {
-    font-size: 15px;  
+    font-size: 18px;  
     padding: 0px;
   }
 }
 
 /* ========== Tablet View ========== */
 @media (min-width: 769px) and (max-width: 1024px) {
-  // .flex-container {
-  //   flex-direction: column;
-  // }
-
-  // .mid-cards{
-  //   width:auto;
-  // }
+   .container {
+    padding: 0px 50px;
+  }
 }

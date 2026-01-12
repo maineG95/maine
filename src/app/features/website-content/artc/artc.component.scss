@@ -15,10 +15,11 @@
 
 .cards{
   margin: 40px 0px;
+  padding: 20px 40px;
 }
 
 .content {
-  font-size: 18px;
+  font-size: 16px;
   text-align: start;
   color:$charcoal;
 }
@@ -30,11 +31,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 10px;
+  padding: 10px 0px;
 }
 
 .sub-heading {
-  font-size:15px;
+  font-size:16px;
   text-align: start;
   font-weight: normal;
   font-style: italic; 
@@ -47,115 +48,54 @@
 }
 
 .section-heading i {
-  font-size: 24px;
+  font-size: 20px;
   color:$softPinkDarker;
   padding-right:10px;
 }
 
 
-
 /* ========== Mobile View ========== */
 @media (max-width: 768px) {
   .container {
-    padding: 0px 10px;
+    padding: 0px 20px;
   }
 
   .title {
     font-size: 20px;  
   }
 
+  .cards {
+    margin: 20px 0px;
+    padding: 10px 20px;
+  }
+
   .content {
-    font-size: 16px; 
-  }
-
-  .section-heading {
-    font-size: 18px; 
-    flex-direction: column;
-    align-items: flex-start; 
-    padding-bottom: 10px;
-  }
-
-  .sub-heading {
     font-size: 14px; 
   }
 
+  .section-heading {
+    font-size: 18px;  
+    flex-direction: column;
+    align-items: flex-start;  
+    
+  }
+
+  .sub-heading {
+    font-size: 14px;
+  }
+
   .section-heading i {
-    font-size: 20px; 
+    font-size: 18px;  
   }
 
   .flex-container {
-    flex-direction: column;
+    flex-direction: column; 
   }
 }
 
 /* ========== Tablet View ========== */
 @media (min-width: 769px) and (max-width: 1024px) {
   .container {
-    padding: 20px; 
-  }
-
-  .title {
-    font-size: 22px;  
-  }
-
-  .section-heading {
-    font-size: 18px; 
-  }
-
-  .content {
-    font-size: 17px;  
-  }
-
-  .sub-heading {
-    font-size: 14px; 
-  }
-
-  .section-heading i {
-    font-size: 22px;  
-  }
-
-  .flex-container {
-    flex-direction: row; 
-    gap: 30px;
-  }
-
-  .cards {
-    width: 48%; 
-  }
-}
-
-/* ========== Desktop View ========== */
-@media (min-width: 1025px) {
-  .container {
-    padding: 40px 100px; 
-  }
-
-  .title {
-    font-size: 24px;  
-  }
-
-  .section-heading {
-    font-size: 20px; 
-  }
-
-  .content {
-    font-size: 18px; 
-  }
-
-  .sub-heading {
-    font-size: 16px; 
-  }
-
-  .section-heading i {
-    font-size: 24px; 
-  }
-
-  .flex-container {
-    flex-direction: row; 
-    gap: 30px; 
-  }
-
-  .cards {
-    width: 48%; 
+     padding: 0px 50px;
   }
 }

@@ -1,7 +1,7 @@
 <div class="container skills">
   <p class="title">Skills</p>
-  <ul class="style cards">
-    <li *ngFor="let question of questions" class="best-card best-card-shadow skill-card">
+  <ul class="style cards skills-wrapper">
+    <li *ngFor="let question of questions" class=" best-card-shadow skill-card">
       <div class="display">
         <div class="section-heading" (click)="toggleExpand(question.id)">
           <i class="fa" [ngClass]="question.icon"></i>

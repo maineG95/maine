@@ -35,7 +35,7 @@ isExpanded: { [key: string]: boolean } = {
     },
     {
       id: 'tools',
-      title: 'Tools',
+      title: ' Developer Tools',
       icon: 'fa-wrench',
       answers: [
         'GIT',
@@ -47,7 +47,8 @@ isExpanded: { [key: string]: boolean } = {
         'Visual Studio Code',
         'Slack',
         'Jira',
-        'Docker'
+        'Docker',
+        'Bitbucket'
       ]
     },
      {
@@ -64,7 +65,7 @@ isExpanded: { [key: string]: boolean } = {
     },
     {
       id: 'designTools',
-      title: 'Design tools',
+      title: 'Design Tools',
       icon: 'fa-paint-brush',
       answers: [
         'Figma',
