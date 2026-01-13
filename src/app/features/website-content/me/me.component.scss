@@ -20,6 +20,17 @@
   margin: 40px 0px;
 }
 
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.mid-cards{
+  width:430px;
+}
+
 .content {
   font-size: 16px;
   text-align: center;
@@ -34,16 +45,6 @@
 
 .training-title {
   font-weight: bold;
-}
-
-.flex-container {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.mid-cards{
-  width:430px;
 }
 
 .section-heading i {
@@ -61,14 +62,28 @@
 
   .section-title {
     text-align: center;
+    margin-bottom: 20px;
   }
 
   .title {
     font-size: 20px;  
+    padding-top: 0px;
   }
 
   .cards {
     margin: 20px 0px;
+    padding: 20px 15px;
+  }
+
+   .flex-container {
+    flex-direction: column; 
+    gap: 10px;
+    margin: 20px 0px;
+  }
+
+  .mid-cards{
+    width:auto;
+    padding: 20px 15px;
   }
 
   .content {
@@ -79,18 +94,9 @@
     font-size: 18px;
   }
 
-   .flex-container {
-    flex-direction: column; 
-    gap: 10px;
-  }
-
-  .mid-cards{
-    width:auto;
-  }
- 
   .section-heading i {
     font-size: 18px;  
-    padding: 0px;
+    padding: 0px 2px;
   }
 }
 

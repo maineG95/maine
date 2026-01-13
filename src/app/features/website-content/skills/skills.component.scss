@@ -11,7 +11,6 @@
   text-align: start;
   font-size: 24px;
   font-weight: bold;
-  padding-top: 10px;
 }
 
 .skills-wrapper {
@@ -73,15 +72,12 @@ ul {
   background: transparent;
   border: none;
   cursor: pointer;
-
-  width: 44px;   
-  height: 44px;
-
   display: flex;
   align-items: center;  
   justify-content: center; 
 
   padding: 0;
+  margin: 0;
 }
 
 .arrow {
@@ -114,17 +110,27 @@ ul {
   }
 
   .title {
-    font-size: 20px;  
+    font-size: 20px;
   }
 
   .skill-card {
+    padding: 20px 15px;
     .content {
       font-size: 14px;
+      margin-left: 35px;
+      padding: 2px 0px;
     }
   }
-  
+
+  .style {
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+
   .cards {
-    margin: 20px 0px;
+    // margin: 20px 0px;
+    margin: 0px ;
+
   }
 
   .section-heading {

@@ -17,7 +17,7 @@
   background-color: $warmGray;
   padding: 5px;
   border-radius: 10px;
-  // max-width: 400px;
+  max-width: 400px;
   width: auto;
   border: 1px solid $softPink;
 }
@@ -37,6 +37,11 @@
 }
 
 @media (max-width: 768px) {
+
+  .modal-content {
+    max-width: 300px;
+  }
+
   .modal-close-btn {
     font-size: 10px;
   }
