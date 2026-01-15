@@ -35,36 +35,40 @@
 }
 
 .footer-icon {
-  font-size: 24px; /* Adjust size of icons */
-  color: #333; /* Set color */
-  margin: 0 10px; /* Space between icons */
+  font-size: 24px; 
+  color: #333; 
+  margin: 0 10px;
   transition: color 0.3s;
 }
 
 .footer-icon:hover {
-  color:$coral; /* Hover effect color */
+  color:$coral;
   transform: scale(1.05);
 }
 
-.address .email {
+
+.address a {
+  all: unset;  
   cursor: pointer;
   transition: color 0.3s, transform 0.3s ease-in-out;
   font-size: 16px;
 }
 
-.address .email:hover {
-  color: $coral;
+.address a:hover {
+ color: $coral;
   transform: scale(1.05);
 }
 
-.address .email:active {
+.address a:focus {
+  outline: none;
   transform: scale(0.98);
-} 
+}
+
 
 /* ========= Tablet ========= */
 @media (max-width: 991px) {
   .footer {
-    padding: 40px 50px;  // Adjust padding for tablet
+    padding: 40px 50px; 
   }
 }
 
@@ -75,8 +79,8 @@
   }
 
   .details {
-    flex-direction: column;  // Stack elements vertically
-    align-items: center;     // Center align items
+    flex-direction: column;  
+    align-items: center;   
     gap: 0px;  
   }
 
@@ -95,7 +99,7 @@
     margin:0 !important ;
   }
 
-  .address .email {
+  .address .a {
     font-size: 14px;   
     margin:0 !important;
   }

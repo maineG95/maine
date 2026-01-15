@@ -10,14 +10,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 40px;
 }
 .modal-content {
   position: relative;
   background-color: $warmGray;
   padding: 5px;
   border-radius: 10px;
-  // max-width: 400px;
   width: auto;
   border: 1px solid $softPink;
 }

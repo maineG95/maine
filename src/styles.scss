@@ -9,29 +9,7 @@ html, body {
   background-color:$warmGray;
 }
 
-body {
-  cursor: none;
-}
 
-.custom-cursor {
-  position: fixed;
-  pointer-events: none;
-  z-index: 9999;
-
-  width: 0;
-  height: 0;
-
-  border-top: 10px solid transparent;
-  border-bottom: 4px solid transparent;
-  border-left: 9px solid $softPink;
-
-  transform: translate(0, -10px);
-  filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.3));
-}
-
-* {
-  cursor: none !important;
-}
 
 
 

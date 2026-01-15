@@ -2,6 +2,7 @@
 
 .container {
   padding: 0px 100px;
+  min-height: 100vh;
   color:$charcoal;
 }
 
@@ -18,17 +19,20 @@
 
 .cards{
   margin: 40px 0px;
+  padding: 30px 20px;
 }
 
 
 .flex-container {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 40px;
+  margin: 40px 0px;
 }
 
 .mid-cards{
   width:430px;
+  padding: 30px 20px;
 }
 
 .content {

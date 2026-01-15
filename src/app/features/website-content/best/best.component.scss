@@ -15,14 +15,20 @@
 
 .cards{
   margin: 40px 0px;
-  padding: 20px 40px;
+  padding: 40px;
 }
+
+.details{
+    padding-left:50px;
+  }
+
 
 .content {
   font-size: 16px;
   text-align: start;
   color:$charcoal;
 }
+
 
 .section-heading {
   font-size:20px;
@@ -31,7 +37,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0px;
+  padding: 0px;
 }
 
 .sub-heading {
