@@ -36,16 +36,16 @@ export class HomeComponent {
     this.currentView = 'login'; 
   }
 
-  checkLoginAndNavigate(event: MouseEvent, route: string) {
-    event.preventDefault(); // Prevent default navigation
-    
-    if (this.isLoggedIn) {
-      this.router.navigate(['/me']);
-    } else {
-      this.router.navigate(['']);
-      this.openModal();
-    }
+  viewResume(event: MouseEvent) {
+  event.preventDefault();
+
+  if (this.isLoggedIn) {
+    window.open('resume.pdf', '_blank');
+  } else {
+    this.openModal();
   }
+}
+
 
   closeModalFromChild() {
     this.isModalVisible = false;

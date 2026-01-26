@@ -22,7 +22,8 @@
       </nav>
       <nav class="desktop-nav end">
         <ul>
-          <li><a routerLink="/contacts" routerLinkActive="active-link">Contact Me</a></li>
+          <li><a href="mailto:dio8921.s@gmail.com">Email Me</a></li>
+          <!-- <li><a routerLink="/contacts" routerLinkActive="active-link">Contact Me</a></li> -->
           <li *ngIf="!isLoggedIn"><a (click)="openModal()">Login</a></li>
           <li *ngIf="isLoggedIn" ><a (click)="openLogout()">Logout</a></li>
         </ul>
@@ -52,7 +53,8 @@
           <li><a routerLink="/artc" (click)="checkLoginAndNavigate($event, '/artc')">Artc Inc.</a></li>
         </ul>
       </li>
-      <li><a routerLink="/contacts" (click)="closeMobileNav()">Contact Me</a></li>
+      <li><a href="mailto:dio8921.s@gmail.com" (click)="closeMobileNav()">Email Me</a></li>
+      <!-- <li><a routerLink="/contacts" (click)="closeMobileNav()">Contact Me</a></li> -->
       <li *ngIf="!isLoggedIn"><a (click)="openModal()">Login</a></li>
       <li *ngIf="isLoggedIn" ><a (click)="openLogout()">Logout</a></li>
     </ul>
