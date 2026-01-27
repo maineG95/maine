@@ -30,7 +30,9 @@ isExpanded: { [key: string]: boolean } = {
         'Javascript/Typescript',
         'HTML',
         'SCSS',
-        'Bootstrap'
+        'Flutter',
+        'Bootstrap',
+        'Dart',
       ]
     },
     {
@@ -59,7 +61,7 @@ isExpanded: { [key: string]: boolean } = {
         'Responsive Design',
         'API Integration',
         'Performance Optimization',
-        'CI/CD',
+        'CI/CD', 'OOP', 
         'Agile Methodologies'
       ]
     },
